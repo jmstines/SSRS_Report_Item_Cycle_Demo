@@ -11,6 +11,6 @@
   End Sub
 
   Public Function IsHidden() As Boolean
-    Return Not (CyclePerentage > CycleRanges.MinCycleRange AndAlso CyclePerentage <= CycleRanges.MaxCycleRange)
+    Return Not (CyclePerentage > CycleRanges.MinCycleRangePercent AndAlso CyclePerentage <= CycleRanges.MaxCycleRangePercent)
   End Function
 End Class

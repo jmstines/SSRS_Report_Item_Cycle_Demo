@@ -1,7 +1,9 @@
 ﻿Imports SSRSVisibleItemCycleDemo
 
 Public Class CurrentDateTimeProviderMock : Implements IDateTimeProvider
-  Public Sub New(ByVal now As DateTime, ByVal today As DateTime)
+  Public Sub New(ByVal today As DateTime, ByVal now As DateTime)
+    If now < today Then Throw New ArgumentOutOfRangeException("now < today")
+
     _Now = now
     _Today = today
   End Sub

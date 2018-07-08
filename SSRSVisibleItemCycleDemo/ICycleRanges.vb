@@ -1,4 +1,4 @@
 ﻿Public Interface ICycleRanges
-  ReadOnly Property MaxCycleRange As Long
-  ReadOnly Property MinCycleRange As Long
+  ReadOnly Property MaxCycleRangePercent As Integer
+  ReadOnly Property MinCycleRangePercent As Integer
 End Interface

@@ -1,6 +1,6 @@
 ﻿Public Class CycleRanges : Implements ICycleRanges
-  Public ReadOnly Property MinCycleRange As Long Implements ICycleRanges.MinCycleRange
-  Public ReadOnly Property MaxCycleRange As Long Implements ICycleRanges.MaxCycleRange
+  Public ReadOnly Property MinCycleRangePercent As Integer Implements ICycleRanges.MinCycleRangePercent
+  Public ReadOnly Property MaxCycleRangePercent As Integer Implements ICycleRanges.MaxCycleRangePercent
   Private Property PageCount As Integer
   Private Property Page As Integer
 
@@ -16,10 +16,10 @@
   End Sub
 
   Private Sub SetMinCycleRange()
-    _MinCycleRange = CLng(((Page - 1) / PageCount) * 100)
+    _MinCycleRangePercent = (((Page - 1) / PageCount) * 100)
   End Sub
 
   Private Sub SetMaxCycleRange()
-    _MaxCycleRange = CLng(((Page / PageCount) * 100))
+    _MaxCycleRangePercent = (((Page / PageCount) * 100))
   End Sub
 End Class
