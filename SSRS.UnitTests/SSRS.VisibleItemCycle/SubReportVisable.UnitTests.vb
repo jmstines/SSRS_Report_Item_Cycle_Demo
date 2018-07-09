@@ -2,8 +2,6 @@
 Imports SSRSVisibleItemCycleDemo
 
 <TestClass()> Public Class SubReportVisable
-  Private ReadOnly TestDateTimeProvider As CurrentDateTimeProviderMock = New CurrentDateTimeProviderMock("6/19/2015 10:35:50 AM", "6/19/2015 12:00:00 AM")
-  Private ReadOnly TestDateTimeProvider2 As CurrentDateTimeProviderMock = New CurrentDateTimeProviderMock("6/19/2015 10:36:50 AM", "6/19/2015 12:00:00 AM")
   Private cycleRangesOne As ICycleRanges
   Private ReportRefreshOne As SubReportHidden
   Private ReportRefreshTwo As SubReportHidden
